@@ -15,7 +15,7 @@ st.markdown("---")
 # Sidebar setup
 st.sidebar.title("📊 Project Navigator")
 st.sidebar.info("""
-Built by [Parasnath](https://github.com/parasnath-tech)  
+Built by [Paras nath](https://github.com/parasnath-tech)  
 This dashboard helps you monitor and optimize Oracle Cloud costs.
 """)
 
