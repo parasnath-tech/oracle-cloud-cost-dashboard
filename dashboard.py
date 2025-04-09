@@ -2,8 +2,22 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 
-# 🖥️ Streamlit Config
-st.set_page_config(page_title="Oracle Cloud Cost Dashboard", layout="wide")
+# Set page config
+st.set_page_config(
+    page_title="Oracle Cloud Cost Optimizer",
+    page_icon="💸",
+    layout="wide"
+)
+# Custom title
+st.markdown("<h1 style='text-align: center; color: #2C3E50;'>💸 Oracle Cloud Cost Optimization Dashboard</h1>", unsafe_allow_html=True)
+st.markdown("---")
+
+# Sidebar setup
+st.sidebar.title("📊 Project Navigator")
+st.sidebar.info("""
+Built by [Parasnath](https://github.com/parasnath-tech)  
+This dashboard helps you monitor and optimize Oracle Cloud costs.
+""")
 
 # 🌗 Theme check
 theme_base = st.get_option("theme.base")
