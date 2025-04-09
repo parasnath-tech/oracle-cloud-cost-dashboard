@@ -13,11 +13,11 @@ st.markdown("<h1 style='text-align: center; color: #2C3E50;'>💸 Oracle Cloud C
 st.markdown("---")
 
 # Sidebar setup
-st.sidebar.title("📊 Project Navigator")
-st.sidebar.info("""
-Built by [Paras Nath](https://github.com/parasnath-tech)  
-This dashboard helps you monitor and optimize Oracle Cloud costs.
-""")
+#st.sidebar.title("📊 Project Navigator")
+#st.sidebar.info("""
+#Built by [Paras Nath](https://github.com/parasnath-tech)  
+#This dashboard helps you monitor and optimize Oracle Cloud costs.
+#""")
 
 # 🌗 Theme check
 theme_base = st.get_option("theme.base")
