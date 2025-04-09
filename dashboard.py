@@ -18,6 +18,23 @@ st.markdown("---")
 #Built by [Paras Nath](https://github.com/parasnath-tech)  
 #This dashboard helps you monitor and optimize Oracle Cloud costs.
 #""")
+with st.expander("📘 About This Project", expanded=True):
+    st.markdown("""
+    This interactive dashboard helps track, analyze, and optimize Oracle Cloud Infrastructure (OCI) usage costs.  
+    It’s built using **Python, Streamlit, and Plotly**, and integrates real usage data to generate insights and cost-saving opportunities.
+
+    **Key Features:**
+    - Cost breakdowns by service
+    - Monthly spending trends
+    - Recommendations for optimization
+    - Easy-to-use filters and visuals
+    """)
+st.markdown("""
+<a href="https://github.com/parasnath-tech/oracle-cloud-cost-dashboard" target="_blank">
+    <img src="https://img.shields.io/badge/View%20on%20GitHub-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
+</a>
+""", unsafe_allow_html=True)
+
 
 # 🌗 Theme check
 theme_base = st.get_option("theme.base")
