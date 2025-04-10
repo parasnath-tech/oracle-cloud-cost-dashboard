@@ -8,6 +8,14 @@ st.set_page_config(
     page_icon="💸",
     layout="wide"
 )
+col1, col2 = st.columns([3, 1])
+
+with col1:
+    st.subheader("📊 Real-time cost insights for Oracle Cloud Infrastructure")
+
+with col2:
+    st.image("https://cdn-icons-png.flaticon.com/512/2906/2906277.png", width=80)
+
 # Custom title
 st.markdown("<h1 style='text-align: center; color: #2C3E50;'>💸 Oracle Cloud Cost Optimization Dashboard</h1>", unsafe_allow_html=True)
 st.markdown("---")
