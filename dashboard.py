@@ -38,6 +38,7 @@ with st.expander("📘 About This Project", expanded=True):
     - Recommendations for optimization
     - Easy-to-use filters and visuals
     """)
+    st.markdown("This dashboard presents cost-saving insights using resource-level metrics from Oracle Cloud.")
 st.markdown("""
 <a href="https://github.com/parasnath-tech/oracle-cloud-cost-dashboard" target="_blank">
     <img src="https://img.shields.io/badge/View%20on%20GitHub-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
