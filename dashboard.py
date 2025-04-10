@@ -12,7 +12,7 @@ st.set_page_config(
 # Custom title
 st.markdown("<h1 style='text-align: center; color: #2C3E50;'>💸Oracle Cloud Cost Optimization Dashboard</h1>", unsafe_allow_html=True)
 st.markdown("---")
-col1, col2 = st.columns([3, 3])
+col1, col2 = st.columns([3, 2.5])
 
 with col1:
     st.subheader("Real-time cost insights for Oracle Cloud Infrastructure")
