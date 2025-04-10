@@ -5,7 +5,7 @@ import plotly.express as px
 # Set page config
 st.set_page_config(
     page_title="Oracle Cloud Cost Optimizer",
-    page_icon="https://i.ibb.co/zVJb4Bdt/oracle-cloud-logo-removebg-preview.png",
+    page_icon="https://i.ibb.co/LhxJz6NC/oracle-cloud-logo-removebg-preview.png",
     layout="wide"
 )
 st.image("https://logodix.com/logo/692804.png", width=400)
