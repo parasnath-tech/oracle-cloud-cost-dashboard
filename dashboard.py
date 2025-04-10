@@ -11,7 +11,7 @@ st.set_page_config(
 st.image("https://logodix.com/logo/692804.png", width=400)
 
 # Custom title
-st.markdown("<h1 style='text-align: center; color: #2C3E50;'>st.image("https://logodix.com/logo/692804.png", width=400)(Oracle Cloud Cost Optimization Dashboard</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center; color: #2C3E50;'>(💸Oracle Cloud Cost Optimization Dashboard</h1>", unsafe_allow_html=True)
 st.markdown("---")
 col1, col2 = st.columns([3, 2])
 
