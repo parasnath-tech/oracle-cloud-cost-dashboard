@@ -1,0 +1,11 @@
+Resource_ID,Resource_Type,Usage_Hours,Cost_($),CPU_Utilization(%)
+R1,VM Instance,202,380,92
+R2,Storage,535,137,34
+R3,Database,370,422,42
+R4,Load Balancer,206,149,6
+R5,API Gateway,171,409,68
+R6,Container Engine,120,201,64
+R7,Analytics,714,180,25
+R8,AI/ML Services,221,199,37
+R9,Logging,566,358,80
+R10,Networking,314,307,62
