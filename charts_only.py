@@ -3,10 +3,10 @@ import pandas as pd
 import plotly.express as px
 
 # Page setup
-st.set_page_config(page_title="Oracle Cost Charts Only", page_icon="📊", layout="wide")
+st.set_page_config(page_title="Oracle Cloud Cost Charts Only", page_icon="📊", layout="wide")
 
 # Header
-st.markdown("<h1 style='text-align: center; color: #2C3E50;'>☁️ Oracle Cloud Cost Charts 💹</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center; color: #2C3E50;'>☁️Oracle Cloud Cost Optimization Dashboard💹</h1>", unsafe_allow_html=True)
 st.markdown("---")
 
 # Load default data
@@ -56,13 +56,17 @@ scatter_fig.add_vline(x=30, line_dash="dash", line_color="red",
 scatter_fig.update_layout(height=350, margin=dict(t=40, b=20))
 
 # Layout
-st.markdown("## 📊 Oracle Cloud Visuals")
+st.markdown("## 📈Visual Insights")
 col1, col2 = st.columns(2)
 with col1: st.plotly_chart(bar_fig, use_container_width=True)
 with col2: st.plotly_chart(pie_fig, use_container_width=True)
 col3, col4 = st.columns(2)
 with col3: st.plotly_chart(line_fig, use_container_width=True)
 with col4: st.plotly_chart(scatter_fig, use_container_width=True)
+
+# 📋 Full Table
+st.markdown("### 📊 Full Cost Breakdown Table")
+st.dataframe(df, use_container_width=True, height=300)
 
 # Underutilized Resources
 st.markdown("### 🚀 Underutilized Resources (CPU < 30%)")
