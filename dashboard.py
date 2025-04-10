@@ -59,7 +59,7 @@ scatter_colors = [
 
 # 🌟 Title
 #st.title("☁️ Oracle Cloud Cost Optimization Dashboard")
-st.markdown("This dashboard presents cost-saving insights using resource-level metrics from Oracle Cloud.")
+#st.markdown("This dashboard presents cost-saving insights using resource-level metrics from Oracle Cloud.")
 
 # 📂 File Upload
 uploaded_file = st.file_uploader("📁 Upload your Oracle Cloud Cost CSV", type="csv")
