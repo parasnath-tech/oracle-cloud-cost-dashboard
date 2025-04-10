@@ -8,6 +8,8 @@ st.set_page_config(
     page_icon="💸",
     layout="wide"
 )
+st.image("https://www.oracle.com/a/ocom/img/cb71-cloud-oci.svg", width=200)
+
 # Custom title
 st.markdown("<h1 style='text-align: center; color: #2C3E50;'>💸 Oracle Cloud Cost Optimization Dashboard</h1>", unsafe_allow_html=True)
 st.markdown("---")
