@@ -10,7 +10,7 @@ st.set_page_config(
 )
 
 # Custom title
-st.markdown("<h1 style='text-align: center; color: #2C3E50;'>💸Oracle Cloud Cost Optimization Dashboard</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center; color: #2C3E50;'>☁️Oracle Cloud Cost Optimization Dashboard💸</h1>", unsafe_allow_html=True)
 st.markdown("---")
 col1, col2 = st.columns([0.5, 3.5])
 
@@ -58,7 +58,7 @@ scatter_colors = [
     '#00BFFF', '#CD5C5C', '#4682B4', '#E9967A', '#7FFFD4']
 
 # 🌟 Title
-st.title("☁️ Oracle Cloud Cost Optimization Dashboard")
+#st.title("☁️ Oracle Cloud Cost Optimization Dashboard")
 st.markdown("This dashboard presents cost-saving insights using resource-level metrics from Oracle Cloud.")
 
 # 📂 File Upload
