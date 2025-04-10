@@ -15,10 +15,10 @@ st.markdown("---")
 col1, col2 = st.columns([3, 2])
 
 with col1:
-    st.subheader("Real-time cost insights for Oracle Cloud Infrastructure")
+    st.image("https://i.ibb.co/KpGPBkDC/Oracle-Logo-History.png", width=120)
 
 with col2:
-    st.image("https://i.ibb.co/KpGPBkDC/Oracle-Logo-History.png", width=120)
+    st.subheader("Real-time cost insights for Oracle Cloud Infrastructure")
 
 
 # Sidebar setup
