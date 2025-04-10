@@ -18,7 +18,7 @@ with col1:
     st.subheader("Real-time cost insights for Oracle Cloud Infrastructure")
 
 with col2:
-    st.image("https://i.ibb.co/KpGPBkDC/Oracle-Logo-History.png", width=80)
+    st.image("https://i.ibb.co/KpGPBkDC/Oracle-Logo-History.png", width=120)
 
 
 # Sidebar setup
