@@ -17,7 +17,7 @@ with col1:
     st.subheader("📊 Real-time cost insights for Oracle Cloud Infrastructure")
 
 with col2:
-    st.image("https://cdn-icons-png.flaticon.com/512/2906/2906277.png", width=80)
+    st.image("https://www.tecnovait.com/wp-content/uploads/2023/11/oracle-servicio-cloud-en.png", width=80)
 
 
 # Sidebar setup
