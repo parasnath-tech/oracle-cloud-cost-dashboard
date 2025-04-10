@@ -8,7 +8,7 @@ st.set_page_config(
     page_icon="💸",
     layout="wide"
 )
-st.image("https://logodix.com/logo/692804.png", width=200)
+st.image("https://logodix.com/logo/692804.png", width=400)
 
 # Custom title
 st.markdown("<h1 style='text-align: center; color: #2C3E50;'>💸 Oracle Cloud Cost Optimization Dashboard</h1>", unsafe_allow_html=True)
