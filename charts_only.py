@@ -31,8 +31,7 @@ bar_fig.update_layout(height=350, margin=dict(t=40, b=20))
 pie_df = df.groupby("Resource_Type")["Cost_($)"].sum().reset_index()
 pie_fig = px.pie(pie_df, names="Resource_Type", values="Cost_($)",
                  color_discrete_sequence=pie_colors,
-                 title="Cloud Cost Distribution by Resource Type",
-                 hover_data=["Resource_Type", "Resource_ID", "CPU_Utilization(%)", "Usage_Hours", "Instance_Count", "Instance_Type"])
+                 title="Cloud Cost Distribution by Resource Type")
 pie_fig.update_traces(textinfo="percent+label", pull=0.03)
 pie_fig.update_layout(height=350, margin=dict(t=40, b=20))
 
