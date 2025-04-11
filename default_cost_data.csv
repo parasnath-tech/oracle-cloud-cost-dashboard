@@ -1,4 +1,4 @@
-Resource_ID,Resource_Type,Usage_Hours,Cost ($),CPU_Utilization (%),Instance_Count,Instance_Type
+Resource_ID,Resource_Type,Usage_Hours,Cost_($),CPU_Utilization(%),Instance_Count,Instance_Type
 R1,VM Instance,202,380,92,2,VM.Standard3.Flex
 R2,Storage,535,137,34,NA,NA
 R3,Database,370,422,42,1,Exadata.QuarterRack
