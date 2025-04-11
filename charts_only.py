@@ -25,20 +25,21 @@ scatter_colors = ['#FFA07A', '#20B2AA', '#9370DB', '#3CB371', '#F08080', '#00BFF
 bar_fig = px.bar(df, x="Resource_Type", y="Cost_($)", color="Resource_Type",
                  color_discrete_sequence=bar_colors,
                  title="Cloud Cost Breakdown by Resource Type",
-                 hover_data=["Resource_ID", "CPU_Utilization(%)", "Usage_Hours"])
+                 hover_data=["Resource_ID", "CPU_Utilization(%)", "Usage_Hours", "Instance_Count", "Instance_Type"])
 bar_fig.update_layout(height=350, margin=dict(t=40, b=20))
 
 pie_df = df.groupby("Resource_Type")["Cost_($)"].sum().reset_index()
 pie_fig = px.pie(pie_df, names="Resource_Type", values="Cost_($)",
                  color_discrete_sequence=pie_colors,
-                 title="Cloud Cost Distribution by Resource Type")
+                 title="Cloud Cost Distribution by Resource Type",
+                 hover_data=["Resource_ID", "CPU_Utilization(%)", "Usage_Hours", "Instance_Count", "Instance_Type"])
 pie_fig.update_traces(textinfo="percent+label", pull=0.03)
 pie_fig.update_layout(height=350, margin=dict(t=40, b=20))
 
 df_sorted = df.sort_values(by="Usage_Hours")
 line_fig = px.line(df_sorted, x="Usage_Hours", y="Cost_($)", markers=True,
                    title="Usage Hours vs. Cost Trend",
-                   hover_data=["Resource_ID", "CPU_Utilization(%)"])
+                   hover_data=["Resource_ID", "CPU_Utilization(%)", "Usage_Hours", "Instance_Count", "Instance_Type"])
 line_fig.update_traces(marker=dict(size=8),
                        line=dict(color='royalblue'),
                        text=df_sorted["Resource_ID"],
@@ -49,7 +50,7 @@ line_fig.update_layout(height=350, margin=dict(t=40, b=20),
 
 scatter_fig = px.scatter(df, x="CPU_Utilization(%)", y="Cost_($)", size="Cost_($)",
                          color="Resource_Type", title="CPU Utilization vs. Cost Analysis",
-                         hover_data=["Resource_ID", "Usage_Hours"],
+                         hover_data=["Resource_ID", "CPU_Utilization(%)", "Usage_Hours", "Instance_Count", "Instance_Type"],
                          color_discrete_sequence=scatter_colors)
 scatter_fig.add_vline(x=30, line_dash="dash", line_color="red",
                       annotation_text="Underutilized Threshold (30%)", annotation_position="top left")
